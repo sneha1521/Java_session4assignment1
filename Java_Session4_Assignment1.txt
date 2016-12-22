@@ -1,0 +1,33 @@
+1. A program to access a protected method of a class in different package:
+
+In Java if you want to access a method which is declared as protected in a different package, 
+you can access it by Inheritance.
+
+package package1;
+
+public class session4 {
+
+	public void protectedMethod() {
+		System.out.println("Inside Method with PROTECTED Modifier");
+	}
+}
+
+package package2;
+
+import package1.session4;
+
+public class session4_AccessMethod {
+
+public static void main(String[] args) {
+		
+		session4 session4Object = new session4();
+ 		session4Object.protectedMethod();
+}
+
+}
+
+
+
+Result :
+
+Inside Method with PROTECTED Modifier
